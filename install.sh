@@ -92,7 +92,7 @@ the service.${NC}"
 # telegram bot
 # openssl enc -aes-256-cbc -salt -in install_org.sh -out install.sh -pass pass:no_
 one_will_know
-# curl -fsSL https://raw.githubusercontent.com/ahwazi12/kn-panel/main/install.sh
+# curl -fsSL https://raw.githubusercontent.com/ahwazi1/kn-panel/main/install.sh
 -o install.sh && bash -c "$(openssl enc -d -aes-256-cbc -in install.sh -pass pass:
 no_one_will_know)"
 # marzban commands
