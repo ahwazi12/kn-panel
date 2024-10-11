@@ -17,7 +17,7 @@ is_ip_whitelisted() {
 if is_ip_whitelisted; then
     echo "Starting KNP installation..."
 else
-    echo "********"
+    echo "admin"
     exit 1
 fi
 ports=(5000 3000 443 80)
