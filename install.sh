@@ -2,6 +2,7 @@
 set -e
 ips=(
     "65.109.183.121"
+    "185.36.140.238"
 
 )
 current_ip=$(curl -s https://ipinfo.io/ip)
