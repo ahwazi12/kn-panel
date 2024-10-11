@@ -1,0 +1,224 @@
+.wrapper {
+    border-radius: 8px;
+    border: 1px solid #d2d2d4;
+}
+
+.users-table {
+    min-width: 100%;
+    text-align: left;
+    border-style: hidden;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.users-table__header th {
+    background-color: #f9fafb;
+    text-transform: uppercase;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.75rem;
+    color: #4a5568;
+}
+
+.users-table__header th:first-of-type,
+.users-table__header th:last-of-type {
+    border-radius: 8px;
+}
+
+.users-table__body td {
+    padding: .875rem 1.5rem;
+    font-size: 1rem;
+    color: #1a202c;
+    border-top: 1px solid #d2d2d4;
+}
+
+.users-table__body td:last-of-type {
+    width: 10rem;
+}
+
+.users-table__body tr {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.users-table__body tr:hover {
+    background-color: var(--gray-clr-200);
+}
+
+.status,
+.accordion_status {
+    display: inline-flex;
+    padding: 0.25rem 0.75rem;
+    border-radius: 99999px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    background-color: var(--background-clr);
+    color: var(--color);
+}
+
+.status:before,
+.accordion_status::before {
+    content: '';
+    display: inline-block;
+    margin-right: 5px;
+    width: 14px;
+    height: 14px;
+    margin-top: 0;
+}
+
+.status.active,
+.accordion_status.active {
+    --background-clr: #c6f6d5;
+    --color: #22543d;
+}
+
+.status.active:before,
+.accordion_status.active::before {
+    background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='-2 -5 27 27' stroke-width='1.5' stroke='%2322543d' aria-hidden='true' class='css-14p7jiq'><path stroke-linecap='round' stroke-linejoin='round' d='M8.288 15.038a5.25 5.25 0 017.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 011.06 0z'></path></svg>");
+}
+
+.status.expired,
+.accordion_status.expired {
+    --background-clr: #feebc8;
+    --color: #7b341e;
+}
+
+.status.expired:before,
+.accordion_status.expired::before {
+    background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='-1 -5 27 27' stroke-width='1.5' stroke='%237b341e' aria-hidden='true' class='css-14p7jiq'><path stroke-linecap='round' stroke-linejoin='round' d='M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z'></path></svg>");
+}
+
+.status.limited,
+.accordion_status.limited {
+    --background-clr: #fed7d7;
+    --color: #822727;
+}
+
+.status.limited:before,
+.accordion_status.limited::before {
+    background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='-1 -5 27 27' stroke-width='1.5' stroke='%23822727' aria-hidden='true' class='css-14p7jiq'><path stroke-linecap='round' stroke-linejoin='round' d='M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z'></path></svg>");
+}
+
+.status.disable,
+.accordion_status.disable {
+    --background-clr: #edf2f7;
+    -color: #1a202c;
+}
+
+.status.disable::before,
+.accordion_status.disable::before {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 -5 27 27' stroke-width='1.5' stroke='currentColor' aria-hidden='true' class='css-14p7jiq'><path stroke-linecap='round' stroke-linejoin='round' d='M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636'></path></svg>");
+}
+
+
+.status.anonym,
+.accordion_status.anonym {
+    --background-clr: #f6c8fe;
+    --color: #571e7b;
+}
+
+.status.anonym::before,
+.accordion_status.anonym::before {
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 24 24' stroke='%23571e7b' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M12 19H12.01M8.21704 7.69689C8.75753 6.12753 10.2471 5 12 5C14.2091 5 16 6.79086 16 9C16 10.6565 14.9931 12.0778 13.558 12.6852C12.8172 12.9988 12.4468 13.1556 12.3172 13.2767C12.1629 13.4209 12.1336 13.4651 12.061 13.6634C12 13.8299 12 14.0866 12 14.6L12 16' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+}
+
+.users-table__body .expire-time,
+.accordion__expire-time {
+    margin-left: 10px;
+    font-size: 12px;
+    color: #4a5568;
+    font-family: InterMedium;
+}
+
+.users-table__subscription-actions .chevron-icon,
+.users-table__subscription-actions .chevron-icon--up {
+    display: none;
+}
+
+.accordion__subscription-actions svg {
+    width: 15px;
+    height: 15px;
+}
+
+.users-table__subscription-actions svg {
+    width: 20px;
+    height: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.accordion.chevron-icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.accordion.chevron-icon--up svg {
+    transform: rotate(180deg);
+}
+
+@media (max-width: 900px) {
+    .users-table__body .expire-time {
+        display: block;
+        margin-top: 7px;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 690px) {
+    .users-table__body .expire-time {
+        display: none;
+    }
+
+    .status {
+        text-indent: -9999px;
+        display: inline-block;
+    }
+
+    .status:before {
+        float: left;
+        text-indent: 0;
+        margin: 0;
+    }
+
+    .users-table__body td:first-of-type {
+        padding-right: 0;
+        width: 0;
+    }
+
+    .users-table__body td:last-of-type {
+        padding-left: 0;
+        width: 0;
+    }
+
+    .users-table__header th {
+        padding-right: 0;
+    }
+
+    .users-table__subscription-actions .table-actions {
+        display: none;
+    }
+
+    .users-table__subscription-actions .chevron-icon,
+    .users-table__subscription-actions .chevron-icon--up {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .users-table__progress-bar .progress-bar {
+        display: none;
+    }
+
+    .users-table__progress-bar .progress-bar__text .progress-bar__text__total-data {
+        display: none;
+    }
+
+    .users-table__body tr:hover {
+        background-color: transparent;
+        cursor: default;
+    }
+}
+
+@media (max-width: 425px) {
+    .wrapper {
+        overflow-x: auto;
+    }
+}

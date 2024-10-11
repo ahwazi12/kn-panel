@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  knpanelmain:
+    image: knpanelmain
+    build:
+      context: .
+      dockerfile: ./Dockerfile

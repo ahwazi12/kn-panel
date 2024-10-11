@@ -1,0 +1,30 @@
+.footer {
+    padding-top: 1rem;
+    gap: 1rem;
+}
+
+@media (max-width: 470px) {
+    .footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .primaryButtons,
+    .primaryButtons>* {
+        width: 100%;
+    }
+
+    .multiSelect {
+        font-size: 10px;
+    }
+
+    .buttons-row {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 740px) {
+    .modal__form__row {
+        flex-direction: column;
+    }
+}

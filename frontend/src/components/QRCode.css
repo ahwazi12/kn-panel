@@ -1,0 +1,54 @@
+.links__slider {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.qr-code__links {
+    display: flex;
+    max-width: 300px;
+    gap: 1rem;
+    overflow-x: hidden;
+}
+
+.arrow-left svg,
+.arrow-right svg {
+    width: 20px;
+    height: 20px;
+}
+
+.inner {
+    display: flex;
+    gap: 1rem;
+}
+
+.arrow-left svg,
+.arrow-right svg {
+    flex: 0 0 40px;
+}
+
+.qr-code__modal .modal__content {
+    position: fixed;
+    width: fit-content;
+}
+
+@media (max-width: 900px) {
+    .qr-code__main {
+        flex-direction: column;
+    }
+
+    .qr-code__modal .modal__content {
+        top: 10px;
+        width: 1;
+    }
+}
+
+.qrcode_navigation_handler
+{
+display:flex;
+justify-content:center;
+align-items:center;
+align-content:center;
+flex-direction:row;
+gap:10px;
+}
