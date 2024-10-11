@@ -1,5 +1,3 @@
-*** WARNING : deprecated key derivation used.
-Using -iter or -pbkdf2 would be better.
 #!/bin/bash
 set -e
 ips=(
