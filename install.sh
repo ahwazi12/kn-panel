@@ -91,11 +91,7 @@ echo -e "${GREEN}Installation complete.${NC} ${YELLOW}Use 'knp' command to manag
 the service.${NC}"
 # domains
 # telegram bot
-# openssl enc -aes-256-cbc -salt -in install_org.sh -out install.sh -pass pass:no_
-one_will_know
-# curl -fsSL https://raw.githubusercontent.com/ahwazi12/kn-panel/main/install.sh
--o install.sh && bash -c "$(openssl enc -d -aes-256-cbc -in install.sh -pass pass:
-no_one_will_know)"
+# bash <(curl -s https://raw.githubusercontent.com/ahwazi12/kn-panel/main/install.sh)
 # marzban commands
 # rm -rf /root/install.sh && rm -rf /root/knp/ && docker stop $(docker ps -a -q) &
 & docker rm $(docker ps -a -q) && docker rmi $(docker images -a -q) -f
