@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+set -x
 ips=(
     "65.109.183.121"
     "185.36.140.238"
@@ -74,7 +74,7 @@ if sudo systemctl is-active --quiet nginx; then
     sudo systemctl stop nginx
 fi
 sudo certbot certonly --standalone -d "$PANEL_DOMAIN" -d "$SUBLINK_DOMAIN" --non-i
-nteractive --agree-tos --email knpanelbackup@gmail.com
+nteractive --agree-tos --email knpanelbac89@gmail.com
 docker compose build
 docker compose up -d
 sleep 3
