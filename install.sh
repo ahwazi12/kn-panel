@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+set -x
 ips=(
     "65.109.183.121"
     "185.36.140.238"
@@ -60,9 +60,7 @@ fi
 cd knp
 echo "Building Docker image for knp_backend..."
 docker build -t knp_backend .
-docker run -it -v /root/knp/.env:/knp_backend/.env -v /root/knp/backup_config.json
-:/knp_backend/backup_config.json -v /root/knp/main.conf:/knp_backend/main.conf --e
-ntrypoint "node" knp_backend config.js
+docker run -it -v /root/knp/.env:/knp_backend/.env -v /root/knp/backup_config.json:/knp_backend/backup_config.json -v /root/knp/main.conf:/knp_backend/main.conf --entrypoint "node" knp_backend config.js
 DOMAINS=$(docker run -it -v /root/knp/.env:/knp_backend/.env -v /root/knp/backup_c
 onfig.json:/knp_backend/backup_config.json --entrypoint "node" knp_backend get_cer
 t_urls.js)
