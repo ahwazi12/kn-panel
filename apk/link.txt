@@ -1,1 +1,1 @@
-https://github.com/ahwazi12/kn-panel/releases/download/2.3/ahwaz-gsm.apk
+https://github.com/ahwazi12/kn-panel/releases/download/2.3/app-release.apk
