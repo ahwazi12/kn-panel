@@ -201,7 +201,7 @@ trim() {
 }
 
 IP=$(ip route get 1 | sed -n 's/^.*src \([0-9.]*\) .*$/\1/p')
-caption="${caption}\n\n${ACLover}\n<code>${IP}</code>\nCreated by @AC_Lover - https://github.com/AC-Lover/backup"
+caption="${caption}\n\n${ACLover}\n<code>${IP}</code>\nساخته شده توسط https://t.me/ahvazgsm1"
 comment=$(echo -e "$caption" | sed 's/<code>//g;s/<\/code>//g')
 comment=$(trim "$comment")
 
