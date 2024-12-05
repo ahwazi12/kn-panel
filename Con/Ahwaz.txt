@@ -1,3 +1,5 @@
 vless://43eb43a8-a1b3-4bee-826a-4752a01c0f72@server15-mci.ahwaz-game.ir:13732?security=none&type=tcp&headerType=http&path=%2F&host=fast.com#server15%F0%9F%92%A5app1
 vless://43eb43a8-a1b3-4bee-826a-4752a01c0f72@net1.iran-ahwaz.ir:1373?security=none&type=tcp&headerType=http&path=%2F&host=fast.com#server1%F0%9F%92%A5app1
 vless://43eb43a8-a1b3-4bee-826a-4752a01c0f72@server7-mci.ahwaz-game.ir:13731?security=none&type=tcp&headerType=http&path=%2F&host=fast.com#server7%F0%9F%92%A5app1
+vless://8fd2a5ee-99f2-402c-83d3-eeed0c977a20@s1.iran-ahwaz.ir:15872?type=tcp&security=none#app-qwg0kahi
+vless://66e1acfa-c10c-4b48-a0d2-1d89f6bb1a6d@s1.iran-ahwaz.ir:39102?type=ws&path=%2F&host=fast.com&security=none#app-ws-bh5tj54u
